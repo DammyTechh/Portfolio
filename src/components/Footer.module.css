@@ -1,0 +1,99 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 64px 0 32px;
+}
+
+.inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(20px,5vw,64px);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 56px;
+}
+@media (max-width: 800px) {
+  .top { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 500px) {
+  .top { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* Brand col */
+.brand { display: flex; flex-direction: column; gap: 8px; }
+
+.brandLogoRow { display: flex; align-items: center; gap: 5px; }
+
+.initials {
+  font-family: var(--font-display);
+  font-size: 26px; font-weight: 700; color: var(--white);
+}
+
+.dot {
+  width: 7px; height: 7px;
+  background: var(--sky-500); border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 8px 2px rgba(14,165,233,0.5);
+}
+
+.brandName {
+  font-size: 14.5px; font-weight: 500; color: var(--white);
+}
+
+.brandRole {
+  font-family: var(--font-mono); font-size: 9.5px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-lo);
+}
+
+.brandTagline {
+  font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-top: 4px;
+}
+
+/* Nav col */
+.navCol { display: flex; flex-direction: column; gap: 10px; }
+
+.colLabel {
+  font-family: var(--font-mono); font-size: 9.5px;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-lo);
+  margin-bottom: 4px;
+}
+
+.navLink {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13.5px; color: var(--text-mid);
+  transition: color .2s ease; text-decoration: none;
+}
+.navLink:hover { color: var(--white); }
+
+.socialIcon { font-size: 13px; color: var(--sky-400); }
+
+.ctaBtn {
+  display: inline-block; margin-top: 8px;
+  font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--sky-300); border: 1px solid var(--border-blue);
+  padding: 9px 16px; border-radius: 6px;
+  transition: background .2s ease, color .2s ease; text-decoration: none;
+}
+.ctaBtn:hover { background: rgba(14,165,233,0.1); color: var(--white); }
+
+/* Bottom */
+.bottom {
+  display: flex; align-items: center; justify-content: space-between;
+  border-top: 1px solid var(--border); padding-top: 24px; flex-wrap: wrap; gap: 12px;
+}
+
+.copy {
+  font-family: var(--font-mono); font-size: 11px;
+  color: var(--text-lo); letter-spacing: 0.04em;
+}
+
+
+.madeWith {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-lo);
+  letter-spacing: 0.04em;
+}

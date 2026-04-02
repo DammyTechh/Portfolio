@@ -1,0 +1,58 @@
+// Demo projects — only shown when Supabase is not yet configured
+// Once you add projects via /admin, these are replaced automatically
+export const DEMO_PROJECTS = [
+  {
+    id: 'demo-1', title: 'Smart IoT Freezer Monitoring System',
+    category: 'IoT · Embedded', year: '2024',
+    tagline: 'Real-time cold storage monitoring with remote control and automatic safety cutoffs.',
+    highlights: ['Temperature monitoring via Dallas sensors','4×50kg load cell weight tracking','Auto AC cut-off via SSR relay','Real-time remote monitoring via Blynk'],
+    stack: ['ESP32', 'Arduino Nano', 'Dallas Sensors', 'Load Cells', 'Blynk', 'SSR'],
+    image_url: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=700&q=80',
+    link: '#', accent: 'var(--sky-400)',
+  },
+  {
+    id: 'demo-2', title: 'AI-Powered Crop Monitoring Drone',
+    category: 'AI · Robotics · IoT', year: '2024',
+    tagline: 'Aerial imaging + AI analysis for precision agriculture and early disease detection.',
+    highlights: ['Onboard image capture & preprocessing','AI-driven crop health classification','AWS IoT cloud transmission pipeline','Early disease detection at scale'],
+    stack: ['Raspberry Pi 5', 'Camera Module', 'Python', 'AWS IoT', 'OpenCV', 'Edge AI'],
+    image_url: 'https://images.unsplash.com/photo-1527430253228-e93688616381?w=700&q=80',
+    link: '#', accent: 'var(--cyan-400)',
+  },
+  {
+    id: 'demo-3', title: 'Industrial Temp & Motor Control System',
+    category: 'Embedded · Automation', year: '2023',
+    tagline: 'CYD touchscreen UI with SSR heating and VFD motor automation.',
+    highlights: ['320×240 custom CYD touchscreen UI','Multi-zone SSR-controlled heating','VFD motor automation integration','GPS + internet time synchronization'],
+    stack: ['CYD Display', 'ESP32', 'SSR', 'VFD', 'GPS Module'],
+    image_url: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=700&q=80',
+    link: '#', accent: 'var(--indigo-400)',
+  },
+  {
+    id: 'demo-4', title: 'Solar/Battery Hybrid Inverter',
+    category: 'Power Systems · PCB', year: '2023',
+    tagline: 'Custom hybrid inverter for refrigeration with solar and lithium battery.',
+    highlights: ['26650 lithium battery pack design','MPPT solar charge controller','AC/DC dual charging system','Power-optimized for refrigeration loads'],
+    stack: ['26650 Li Cells', 'Solar MPPT', 'AC/DC Charging', 'PCB Design', 'BMS'],
+    image_url: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=700&q=80',
+    link: '#', accent: 'var(--emerald-400)',
+  },
+  {
+    id: 'demo-5', title: 'Multi-Touch Sensor Mapping System',
+    category: 'Embedded · Sensing', year: '2023',
+    tagline: '28-channel capacitive sensor grid with real-time position mapping.',
+    highlights: ['28 independent touch channels','Real-time position mapping','Python visualization dashboard','Low-latency scanning firmware'],
+    stack: ['ESP32', '28-Channel ADC', 'Python', 'I2C MUX', 'Streamlit'],
+    image_url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&q=80',
+    link: '#', accent: 'var(--amber-400)',
+  },
+  {
+    id: 'demo-6', title: 'IoT Data Pipeline & Dashboard',
+    category: 'Cloud · Visualization', year: '2022',
+    tagline: 'End-to-end sensor data pipeline: ESP32 → SQL Server → Streamlit analytics.',
+    highlights: ['Sensor-to-cloud REST pipeline','SQL Server time-series storage','Interactive Streamlit dashboard','Historical trend analysis'],
+    stack: ['ESP32', 'REST API', 'SQL Server', 'Python', 'Streamlit', 'Pandas'],
+    image_url: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80',
+    link: '#', accent: 'var(--sky-300)',
+  },
+]
